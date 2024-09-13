@@ -1,14 +1,9 @@
 [package]
-name = "nuxtor"
+name = "gtd"
 version = "0.0.4"
-description = "Starter template for Nuxt 3 and Tauri 2"
-authors = [ "NicolaSpadari" ]
-license = "MIT"
-repository = "https://github.com/NicolaSpadari/nuxtor"
-edition = "2021"
 
 [lib]
-name = "nuxtor_lib"
+name = "gtd_lib"
 crate-type = [
   "staticlib",
   "cdylib",

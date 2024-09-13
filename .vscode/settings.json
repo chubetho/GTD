@@ -1,26 +1,25 @@
 {
-	// Enable the ESlint flat config support
-	"eslint.experimental.useFlatConfig": true,
+  // Enable the ESlint flat config support
 
-	// Use eslint as default formatter
-	"editor.formatOnSave": false,
+  // Use eslint as default formatter
+  "editor.formatOnSave": false,
 
-	// Auto fix
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit",
-		"source.organizeImports": "never"
-	},
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
 
-	// Enable eslint for all supported languages
-	"eslint.validate": [
-		"javascript",
-		"typescript",
-		"vue",
-		"html",
-		"markdown",
-		"json",
-		"jsonc",
-		"yaml",
-		"toml"
-	]
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ]
 }

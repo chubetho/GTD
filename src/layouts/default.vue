@@ -1,10 +1,5 @@
 <template>
-	<div>
-		<SiteNavbar sticky />
-		<SiteSidebar />
-
-		<div crate>
-			<slot />
-		</div>
-	</div>
+  <div>
+    <slot />
+  </div>
 </template>
