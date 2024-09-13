@@ -4,26 +4,39 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/icon',
     '@nuxt/eslint',
+    '@nuxtjs/color-mode',
   ],
+
+  ssr: false,
+
   app: {
     head: {
       title: 'GTD',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      meta: [
-        { name: 'format-detection', content: 'no' },
-      ],
-      bodyAttrs: {
-        class: 'font-text antialiased',
-      },
     },
   },
+
   experimental: {
     typedPages: true,
   },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  features: {
+    inlineStyles: false,
+  },
+
   css: [
     '@unocss/reset/tailwind.css',
   ],
+
+  colorMode: {
+    classSuffix: '',
+  },
+
   vite: {
     clearScreen: false,
     envPrefix: ['VITE_', 'TAURI_'],
@@ -39,15 +52,31 @@ export default defineNuxtConfig({
       },
     },
   },
-  srcDir: 'src/',
-  ssr: false,
+
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+
   devServer: {
     host: '0.0.0.0',
   },
+
   eslint: {
     config: {
       standalone: false,
     },
   },
-  compatibilityDate: '2024-08-01',
+
+  devtools: {
+    enabled: false,
+  },
+
+  compatibilityDate: '2024-09-13',
 })

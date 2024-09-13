@@ -17,7 +17,7 @@ const tauriModules = [
   { module: tauriFs, prefix: 'Fs', importPath: '@tauri-apps/plugin-fs' },
 ]
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<{ prefix?: string }>({
   meta: {
     name: 'nuxt-tauri',
     configKey: 'nuxt-tauri',
